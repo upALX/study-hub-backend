@@ -28,10 +28,11 @@ class CreateAccount:
     def __str__(self) -> str:
         return f'O saldo da conta {self.id} atualmente está em R$ {self.saldo:.03f}'
 
-conta01 = CreateAccount(1)
+conta01 = CreateAccount(id=1)
 conta02 = CreateAccount(2)
 
-conta01.deposita(200)
+
+conta01.deposita(500)
 conta02.deposita(200)
 
 
