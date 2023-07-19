@@ -1,30 +1,30 @@
 import random 
 
 
-# def my_func(list_items: list) -> list:
-#     return lambda list_items: quicksort(list_items)
+def my_func(list_items: list) -> list:
+    return lambda list_items: quicksort(list_items)
 
 
-# def quicksort(list_items: list) -> list:
+def quicksort(list_items: list) -> list:
 
-#     if len(list_items) < 1:
-#         return list_items
+    if len(list_items) < 1:
+        return list_items
 
-#     pivo = list_items[len(list_items) // 2]
+    pivo = list_items[len(list_items) // 2]
 
-#     left = [item for item in list_items if item < pivo]
-#     middle = [item for item in list_items if item == pivo]
-#     right = [item for item in list_items if item > pivo]
-
-
-#     return quicksort(left) + middle + quicksort(right)
+    left = [item for item in list_items if item < pivo]
+    middle = [item for item in list_items if item == pivo]
+    right = [item for item in list_items if item > pivo]
 
 
-# list_of_items = [random.randint(1, 1000) for _ in range(100)]
+    return quicksort(left) + middle + quicksort(right)
 
-# ordened_list = lambda x: quicksort(x)
 
-# print(ordened_list(list_of_items))
+list_of_items = [random.randint(1, 1000) for _ in range(100)]
+
+ordened_list = lambda x: quicksort(x)
+
+print(ordened_list(list_of_items))
 
 list_items = [item for item in range(10)]
 
