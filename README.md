@@ -19,7 +19,6 @@ This is a hub to all learning projects for learn and study to challenges about f
 
 **Clone this repo**
 
-
 ```
 git clonegit@github.com:upALX/study-hub-backend.git
 ```
