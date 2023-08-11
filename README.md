@@ -27,7 +27,6 @@ git clonegit@github.com:upALX/study-hub-backend.git
 
 **If you have any problems with this app or have an idea that contributes, open a [issue](https://github.com/upALX/study-hub-backend/issues), [pull request](https://github.com/upALX/study-hub-backend/pulls) or find me on [Linkedin](https://www.linkedin.com/in/upalx/):D**
 
-
 ### License :unlock:
 
 This project is under the [MIT license](https://github.com/upALX/study-hub-backend/blob/main/LICENSE).
