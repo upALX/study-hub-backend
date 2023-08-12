@@ -12,7 +12,6 @@ This is a repo with all studies about backend and algorithms.
 ## 🛠 &nbsp; Tech Stack used 
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
 
-
 ### About :book:
 This is a hub to all learning projects for learn and study to challenges about frontend
 
