@@ -1,7 +1,6 @@
 from modules.documents_validator.document_number_validator import DocumentNumberValidator
 from validate_docbr import CNPJ
 
-
 cnpj = CNPJ()
 
 print(cnpj.generate())

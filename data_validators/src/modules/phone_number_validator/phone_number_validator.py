@@ -6,6 +6,7 @@ class PhoneNumberValidator:
 
     def __init__(self):
         pass
+    
     def __str__(self) -> str:
 
         return 
@@ -39,5 +40,4 @@ class PhoneNumberValidator:
             return  formated_phone_number
         else:
             raise Exception('Phone number was invalid!')
-        
         
