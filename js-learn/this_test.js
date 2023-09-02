@@ -6,4 +6,4 @@ names.forEach((value) => {
 });
 
 //Practice mapping function
-
+const value = 45
