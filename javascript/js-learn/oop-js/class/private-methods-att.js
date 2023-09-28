@@ -1,4 +1,4 @@
-class User {
+export default class User {
     #name
     #age
     #email
@@ -26,7 +26,7 @@ class User {
         return this.#email
     }
 
-    showValue(){
+    getInformation(){
         console.log(`Values: ${this.#createObjectUser()} `)
     }
 
@@ -41,7 +41,7 @@ class User {
 
 const he = new User('Alexandre', 23, 'alexandreaddress@gmail.com')
 
-console.log(he.showValue())
+console.log(he.getInformation())
 
 // Getting private att with no sucess
 //console.log(he.this.#name)
@@ -59,6 +59,6 @@ console.log(he.getMail)
 
 console.log(he.setMail = 'alx@alx.com')
 
-console.log(he.showValue())
+console.log(he.getInformation())
 
 console.log(he.getMail)
