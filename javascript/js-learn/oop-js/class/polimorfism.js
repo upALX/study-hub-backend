@@ -7,8 +7,6 @@ class Person extends User{
         this.#gender = gender
     }
 
-    
-
 }
 
 const personOne = new Person('ALX', 23, 'ALX@ALX.COM', 'MEN')
