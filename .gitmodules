@@ -1,0 +1,3 @@
+[submodule "java/to-do-list/java/to-do-list/todolist"]
+	path = java/to-do-list/java/to-do-list/todolist
+	url = git@github.com:upALX/to-do-list.git
