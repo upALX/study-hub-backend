@@ -1,3 +1,6 @@
 [submodule "java/to-do-list/java/to-do-list/todolist"]
 	path = java/to-do-list/java/to-do-list/todolist
 	url = git@github.com:upALX/to-do-list.git
+[submodule "python/projects-hub/Find-languages-ETL"]
+	path = python/projects-hub/Find-languages-ETL
+	url = git@github.com:upALX/Find-languages-ETL.git
