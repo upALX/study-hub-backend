@@ -4,33 +4,30 @@
 def get_second_grade(list_grade):
     list_sorted = sorted(list_grade, key=lambda x:x[1])
     second_minor_grade_student = list_sorted[1][1]
-    print('Arr sorted in function', list_sorted)
-    print('Num arr', list_sorted.__len__())
-    print('Value sorted', )
-
+    # print('Arr sorted in function', list_sorted)
+    # print('Num arr', list_sorted.__len__())
+    # print('Value sorted', )
 
     if list_sorted.__len__() == 2:
         if list_sorted[0][1] == list_sorted[1][1]:
+            print('IN ON SAME')
             return ['SAME']
     elif second_minor_grade_student == list_sorted[0][1]:
+        print('IS ON SECOND MINOR NOT TRUE')
         real_second_value_list = [x for x in list_sorted if x[1] != second_minor_grade_student]
 
         print(real_second_value_list)
 
-        print('REAL LIST', real_second_value_list)
-        
         second_grade_list = [x for x in real_second_value_list if x[1] == real_second_value_list[0][1]]
 
-        print('SECOND', second_grade_list)
+        print('REAL', second_grade_list)
 
         return second_grade_list
     else:
-        list_grade = [x for x in list_sorted if x[1] == list_sorted[0][1]]
+        print('IS ON ELSE')
+        list_grade = [x for x in list_sorted if x[1] == list_sorted[1][1]]
 
         return list_grade
-
-            # if second_minor_grade_student == item[1]:
-            #     list_grade_students_name.append(item[0])
 
 list_students = []
 for _ in range(int(input())):
@@ -41,13 +38,12 @@ for _ in range(int(input())):
 
 student_names_list = get_second_grade(list_students)
 
-print('Only names', student_names_list)
-    
-if student_names_list.__len__() == 1:
-    print('All students with same grade')
-else:
-    for item in sorted(student_names_list): 
-        print(item[0])
+print
+
+
+for item in sorted(student_names_list): 
+    print(item[0])
+
 
 # list_grade = [['harry', 37.21], ['barry', 37.21], ["Tina", 37.2], ["Akrt", 41]]
 
