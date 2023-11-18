@@ -7,4 +7,3 @@ def lambda_exec(x, y) -> int:
 
 result = lambda_exec(x=1, y=2)
 
-print(int(result))
