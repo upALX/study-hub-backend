@@ -4,3 +4,9 @@
 [submodule "python/projects-hub/Find-languages-ETL"]
 	path = python/projects-hub/Find-languages-ETL
 	url = git@github.com:upALX/Find-languages-ETL.git
+[submodule "projects-hub/help-creator-api/HelpCreatorBackSide"]
+	path = projects-hub/help-creator-api/HelpCreatorBackSide
+	url = git@github.com:upALX/HelpCreatorBackSide.git
+[submodule "projects-hub/HelpCreatorBackSide"]
+	path = projects-hub/HelpCreatorBackSide
+	url = git@github.com:upALX/HelpCreatorBackSide.git
