@@ -10,3 +10,6 @@
 [submodule "projects-hub/HelpCreatorBackSide"]
 	path = projects-hub/HelpCreatorBackSide
 	url = git@github.com:upALX/HelpCreatorBackSide.git
+[submodule "projects-hub/Life"]
+	path = projects-hub/Life
+	url = git@github.com:upALX/Life.git
