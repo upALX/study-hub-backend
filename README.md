@@ -17,7 +17,7 @@ This is a hub to all learning projects for learn and study to challenges about f
 
 ### How to use :open_mouth:
 
-**Clone this repo**
+**Only clone this repo and do you need**
 
 ```
 git clonegit@github.com:upALX/study-hub-backend.git
