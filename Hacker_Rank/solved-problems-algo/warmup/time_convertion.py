@@ -10,9 +10,6 @@ def timeConversion(s):
     new_string_format = datetime.strptime(s, "%I:%M:%S%p")
     print(datetime.strftime(new_string_format, '%H:%M:%S')) 
 
-
-
 s = input()
 
 result = timeConversion(s)
-

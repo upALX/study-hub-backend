@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from errors import base_errors
+from .errors import ExceptionsFromApi
 
 app = Flask(__name__)
 
@@ -10,4 +10,4 @@ def hello_world():
 
 @app.route("/lol/")
 def no_hello():
-    return base_errors.ExceptionsFromApi(message='Hello', more_information='HERE', status_code=407, title='Tile')
+    return ExceptionsFromApi(message='Hello', more_information='HERE', status_code=407, title='Title')
