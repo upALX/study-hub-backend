@@ -9,6 +9,7 @@ This is a repo with all studies about backend.
 
 ---
 
+
 ## 🛠 &nbsp; Tech Stack used 
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
 
