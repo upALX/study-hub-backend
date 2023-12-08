@@ -1,27 +1,33 @@
-def counting_sort(arr):
+def counting_sort(list_values):
     # Find the maximum value in the array
-    max_value = len(arr)
+    max_value = max(list_values)
 
     print(max_value)
 
-    # Create a counting array to store the count of each element
-    count_array = [0] * (max_value)
+    #Create a counting array to store the count of each element
+    if max_value + 1 != len(list_values):
+        for position in range(len(list_values)):
+            max_value += 1
+            if max_value + 1 == len(list_values):
+                list_counters = [0] * (max_value+1)
+    else:
+        list_counters = [0] * (max_value+1)
 
     # Count the occurrences of each element in the array
-    for num in arr:
-        count_array[num] += 1
+    for value in list_values:
+        list_counters[value] += 1
 
-    print('count array', count_array)
+    print('count array', list_counters)
 
     # Reconstruct the sorted array using the counting array
-    sorted_array = []
-    for i in range(len(count_array)):
-        sorted_array.extend([i] * count_array[i])
+    sorted_list = []
+    for i in range(len(list_counters)):
+        sorted_list.extend([i] * list_counters[i])
 
-    return sorted_array
+    return sorted_list
 
 # Example usage:
-my_str = '63 54 17 78 43 70 32 97 16 94 74 18 60 61 35 83 13 56 75 52 70 12 24 37 17 0 16 64 34 81 82 24 69 2 30 61 83 37 97 16 70 53 0 61 12 17 97 67 33 30 49 70 11 40 67 94 84 60 35 58 19 81 16 14 68 46 42 81 75 87 13 84 33 34 14 96 7 59 17 98 79 47 71 75 8 27 73 66 64 12 29 35 80 78 80 6 5 24 49 82'
+my_str = '1 1 1 1 1 1'
 
 str_to_list = list(map(int, my_str.split(' ')))
 print(str_to_list)
