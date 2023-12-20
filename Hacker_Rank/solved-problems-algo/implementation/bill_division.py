@@ -24,12 +24,14 @@ import sys
 #  3. INTEGER b
 #
 
+from decimal import Decimal 
+
 def bonAppetit(bill, k, b):
     sum_bill = sum(bill)
     if (sum_bill - bill[k]) / 2 == b:
         print('Bon Appetit')
     else:
-        print(int(b - ((sum_bill - bill[k]) / 2)))
+        print(Decimal(round(int(b - ((sum_bill - bill[k]) / 2)))))
 
 first_multiple_input = input().rstrip().split()
 
