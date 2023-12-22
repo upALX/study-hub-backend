@@ -24,6 +24,9 @@ This is a hub to all learning projects for learn and study to challenges about f
 git clonegit@github.com:upALX/study-hub-backend.git
 ```
 
+### Hacker Rank challenges solved
+
+
 ### Make your mark :triangular_flag_on_post:      
 
 **If you have any problems with this app or have an idea that contributes, open a [issue](https://github.com/upALX/study-hub-backend/issues), [pull request](https://github.com/upALX/study-hub-backend/pulls) or find me on [Linkedin](https://www.linkedin.com/in/upalx/):D**
