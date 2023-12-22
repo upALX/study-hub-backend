@@ -30,7 +30,6 @@ git clonegit@github.com:upALX/study-hub-backend.git
 
 1 -  
 
-2 -  
 
 ### Make your mark :triangular_flag_on_post:      
 
