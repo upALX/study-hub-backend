@@ -26,6 +26,7 @@ git clonegit@github.com:upALX/study-hub-backend.git
 
 ### Hacker Rank challenges solved
 
+1 -  
 
 ### Make your mark :triangular_flag_on_post:      
 
