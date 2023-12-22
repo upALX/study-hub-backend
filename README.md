@@ -40,4 +40,6 @@ git clonegit@github.com:upALX/study-hub-backend.git
 
 This project is under the [MIT license](https://github.com/upALX/study-hub-backend/blob/main/LICENSE).
 
+---
+
 *Developed with :purple_heart: by Alexandre*  
