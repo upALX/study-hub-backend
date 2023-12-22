@@ -26,6 +26,8 @@ git clonegit@github.com:upALX/study-hub-backend.git
 
 ### Hacker Rank challenges solved
 
+**Is under migration**
+
 1 -  
 
 2 -  
