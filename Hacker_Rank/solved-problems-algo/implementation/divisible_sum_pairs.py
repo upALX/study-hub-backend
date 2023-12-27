@@ -6,16 +6,20 @@ def divisibleSumPairs(n, k, ar):
     # Write your code here
     list_with_pairs = []
 
-    pairs = [(i, j)for i in ar for j in ar if i < j]
+    pairs = [(i, j) for i in ar for j in ar if i < j]
 
     print('PAIRS', pairs)
+
+    counter = 0
     
     for pair in pairs:
         if sum(pair) % k == 0:
+            counter += 1
             list_with_pairs.append(pair)
             print('PAIR ADDED: ', pair)
 
     print('FINAL LIST PAIRS', list_with_pairs)
+    print('COUNTER', counter)
 
     return list_with_pairs.__len__()
 
