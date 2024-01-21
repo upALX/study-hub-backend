@@ -13,3 +13,6 @@
 [submodule "projects-hub/Life"]
 	path = projects-hub/Life
 	url = git@github.com:upALX/Life.git
+[submodule "typescript-curso-1"]
+	path = typescript-curso-1
+	url = git@github.com:alura-cursos/typescript-curso-1.git
