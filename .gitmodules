@@ -16,3 +16,6 @@
 [submodule "typescript-curso-1"]
 	path = typescript-curso-1
 	url = git@github.com:alura-cursos/typescript-curso-1.git
+[submodule "projects-hub/Orpen-Weather"]
+	path = projects-hub/Orpen-Weather
+	url = git@github.com:upALX/Orpen-Weather.git
