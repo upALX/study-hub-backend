@@ -19,3 +19,6 @@
 [submodule "projects-hub/Orpen-Weather"]
 	path = projects-hub/Orpen-Weather
 	url = git@github.com:upALX/Orpen-Weather.git
+[submodule "projects-hub/--force"]
+	path = projects-hub/--force
+	url = git@github.com:upALX/Orpen-Weather.git
