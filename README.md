@@ -20,11 +20,11 @@ git clone git@github.com:upALX/study-hub-backend.git
 
 ## Make your mark :triangular_flag_on_post:      
 
-**If you have any problems with this app or have an idea that contributes, open a [issue](https://github.com/upALX/Store-API/issues), [pull request](https://github.com/upALX/Store-API/pulls) or find me on [Linkedin](https://www.linkedin.com/in/alxinc/). Don't forget to give the project a star 🌟 :D**
+**If you have any problems with this app or have an idea that contributes, open a [issue](https://github.com/upALX/study-hub-backend/issues), [pull request](https://github.com/upALX/study-hub-backend/pulls) or find me on [Linkedin](https://www.linkedin.com/in/alxinc/). Don't forget to give the project a star 🌟 :D**
 
 ## License :unlock:
 
-This project is under the [MIT license](https://github.com/upALX/Store-API/blob/main/LICENSE).
+This project is under the [MIT license](https://github.com/upALX/study-hub-backend/blob/main/LICENSE).
 
 ---
 
