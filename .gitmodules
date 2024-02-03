@@ -22,3 +22,6 @@
 [submodule "projects-hub/--force"]
 	path = projects-hub/--force
 	url = git@github.com:upALX/Orpen-Weather.git
+[submodule "projects-hub/microsservices"]
+	path = projects-hub/microsservices
+	url = git@github.com:devfullcycle/imersao17.git
