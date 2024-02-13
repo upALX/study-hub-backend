@@ -31,3 +31,18 @@
 [submodule "projects-hub/microsservices-compree"]
 	path = projects-hub/microsservices-compree
 	url = git@github.com:devfullcycle/imersao17.git
+[submodule "configs"]
+	path = configs
+	url = git@github.com:upALX/config.alx.git
+[submodule "projects-hub/ComeToMyBar"]
+	path = projects-hub/ComeToMyBar
+	url = git@github.com:upALX/ComeToMyBar.git
+[submodule "projects-hub/pick-me"]
+	path = projects-hub/pick-me
+	url = git@github.com:upALX/PickMe.git
+[submodule "projects-hub/notes"]
+	path = projects-hub/notes
+	url = git@github.com:upALX/MyNotes.git
+[submodule "projects-hub/pick"]
+	path = projects-hub/pick
+	url = git@github.com:upALX/PickMe.git
