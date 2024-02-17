@@ -30,16 +30,15 @@ def hurdleRace(k, height):
     
     # the value to jump all hurdles is the max of heigths - value of initial potion 
 
-if __name__ == '__main__':
 
-    first_multiple_input = input().rstrip().split()
+first_multiple_input = input().rstrip().split()
 
-    n = int(first_multiple_input[0])
+n = int(first_multiple_input[0])
 
-    k = int(first_multiple_input[1])
+k = int(first_multiple_input[1])
 
-    height = list(map(int, input().rstrip().split()))
+height = list(map(int, input().rstrip().split()))
 
-    result = hurdleRace(k, height)
+result = hurdleRace(k, height)
 
-    print(result)
+print(result)

@@ -31,10 +31,9 @@ def migratoryBirds(arr):
     # if max_value_of_dict
     # print(arr[counter_dict[max_value_of_dict]])
 
-if __name__ == '__main__':
-    arr_count = int(input().strip())
+arr_count = int(input().strip())
 
-    arr = list(map(int, input().rstrip().split()))
-    print(len(arr))
+arr = list(map(int, input().rstrip().split()))
+print(len(arr))
 
-    migratoryBirds(arr)
+migratoryBirds(arr)

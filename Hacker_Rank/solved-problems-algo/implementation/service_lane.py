@@ -39,25 +39,20 @@ def serviceLane(widths, cases):
     
     # verify if the values colect is > 1, if is only 1, return it
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    first_multiple_input = input().rstrip().split()
+first_multiple_input = input().rstrip().split()
 
-    n = int(first_multiple_input[0])
+n = int(first_multiple_input[0])
 
-    t = int(first_multiple_input[1])
+t = int(first_multiple_input[1])
 
-    width = list(map(int, input().rstrip().split()))
+width = list(map(int, input().rstrip().split()))
 
-    cases = []
+cases = []
 
-    for _ in range(t):
-        cases.append(list(map(int, input().rstrip().split())))
+for _ in range(t):
+    cases.append(list(map(int, input().rstrip().split())))
 
-    result = serviceLane(width, cases)
+result = serviceLane(width, cases)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
-
-    fptr.close()
+print(result)

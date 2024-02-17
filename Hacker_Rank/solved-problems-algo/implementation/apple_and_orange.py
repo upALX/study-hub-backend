@@ -52,27 +52,26 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     print(apples_values[0])
     print(orange_values[0])
 
-if __name__ == '__main__':
-    first_multiple_input = input().rstrip().split()
+first_multiple_input = input().rstrip().split()
 
-    s = int(first_multiple_input[0])
+s = int(first_multiple_input[0])
 
-    t = int(first_multiple_input[1])
+t = int(first_multiple_input[1])
 
-    second_multiple_input = input().rstrip().split()
+second_multiple_input = input().rstrip().split()
 
-    a = int(second_multiple_input[0])
+a = int(second_multiple_input[0])
 
-    b = int(second_multiple_input[1])
+b = int(second_multiple_input[1])
 
-    third_multiple_input = input().rstrip().split()
+third_multiple_input = input().rstrip().split()
 
-    m = int(third_multiple_input[0])
+m = int(third_multiple_input[0])
 
-    n = int(third_multiple_input[1])
+n = int(third_multiple_input[1])
 
-    apples = list(map(int, input().rstrip().split()))
+apples = list(map(int, input().rstrip().split()))
 
-    oranges = list(map(int, input().rstrip().split()))
+oranges = list(map(int, input().rstrip().split()))
 
-    countApplesAndOranges(s, t, a, b, apples, oranges)
+countApplesAndOranges(s, t, a, b, apples, oranges)
