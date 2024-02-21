@@ -2,11 +2,11 @@
 
 from itertools import permutations
 
-def divisibleSumPairs(n, k, ar):
+def divisibleSumPairs(n, k: int, ar):
     # Write your code here
     list_with_pairs = []
 
-    pairs = [(i, j) for i in ar for j in ar if i < j]
+    pairs = [[i, j] for i in ar for j in ar if i < j]
 
     print('PAIRS', pairs)
 
