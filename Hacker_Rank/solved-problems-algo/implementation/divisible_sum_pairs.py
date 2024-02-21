@@ -1,27 +1,37 @@
-# Given an array of integers and a positive integer K, DETERMINE THE NUMBER OF (I,J) PAIR WHERE I < J AND AR[I] + AR[J] is divisible by K.
+#!/bin/python3
 
-from itertools import permutations
+import math
+import os
+import random
+import re
+import sys
 
-def divisibleSumPairs(n, k: int, ar):
-    # Write your code here
-    list_with_pairs = []
+#
+# Complete the 'divisibleSumPairs' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER n
+#  2. INTEGER k
+#  3. INTEGER_ARRAY ar
+#
 
-    pairs = [[i, j] for i in ar for j in ar if i < j]
+def divisibleSumPairs(k, arr):
+    remainder_freq = {}
+    count = 0
 
-    print('PAIRS', pairs)
+    # Iterate through the array
+    for num in arr:
+        # Calculate the remainder when num is divided by k
+        remainder = num % k
+        # Calculate the complement required for the sum to be divisible by k
+        complement = (k - remainder) % k
+        # Increment count by the frequency of the complement
+        count += remainder_freq.get(complement, 0)
+        # Update the frequency of the current remainder
+        remainder_freq[remainder] = remainder_freq.get(remainder, 0) + 1
 
-    counter = 0
-    
-    for pair in pairs:
-        if sum(pair) % k == 0:
-            counter += 1
-            list_with_pairs.append(pair)
-            print('PAIR ADDED: ', pair)
-
-    print('FINAL LIST PAIRS', list_with_pairs)
-    print('COUNTER', counter)
-
-    return list_with_pairs.__len__()
+    return count
 
 first_multiple_input = input().rstrip().split()
 
@@ -31,6 +41,6 @@ k = int(first_multiple_input[1])
 
 ar = list(map(int, input().rstrip().split()))
 
-result = divisibleSumPairs(n, k, ar)
+result = divisibleSumPairs( k, ar)
 
 print(result)
