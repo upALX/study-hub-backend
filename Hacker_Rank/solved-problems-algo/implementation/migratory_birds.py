@@ -1,4 +1,11 @@
 #!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
 #
 # Complete the 'migratoryBirds' function below.
 #
@@ -6,34 +13,27 @@
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
-from collections import Counter
-
 def migratoryBirds(arr):
-    # Write your code here
+     # Create a dictionary to store the frequency of each bird type
+    frequency = {}
     
-    # determine the id of the most frequently sighted
-    # counter_dict = {}
+    # Count the frequency of each bird type
+    for bird_id in arr:
+        frequency[bird_id] = frequency.get(bird_id, 0) + 1
     
-    # for value in arr:
-    #     if value not in counter_dict:
-    #         counter_dict[value] = 0
-    #     counter_dict[value] += 1
-
-    counter_dict = Counter(arr)
-
-    max_value_of_dict = max(counter_dict, key=counter_dict.get) 
-
-    # matching_keys = [key for key, value in counter_dict.items() if value == max_value_of_dict]
+    # Find the maximum frequency
+    max_frequency = max(frequency.values())
     
-    print(counter_dict)
-    print(max_value_of_dict)
-    # If more than 1 type has been spotted that maximum amount, return the smallest of their ids
-    # if max_value_of_dict
-    # print(arr[counter_dict[max_value_of_dict]])
+    # Find the bird type(s) with the maximum frequency
+    most_frequent_birds = [bird_id for bird_id, freq in frequency.items() if freq == max_frequency]
+    
+    # Return the smallest bird type ID among the most frequent ones
+    return min(most_frequent_birds)
 
 arr_count = int(input().strip())
 
 arr = list(map(int, input().rstrip().split()))
-print(len(arr))
 
-migratoryBirds(arr)
+result = migratoryBirds(arr)
+
+print(result)
