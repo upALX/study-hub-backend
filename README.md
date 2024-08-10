@@ -18,7 +18,7 @@ git clone git@github.com:upALX/study-hub-backend.git
 
 **Know the CAOS of knowledge**
 
-## Make your mark :triangular_flag_on_post:      
+## Make your mark :triangular_flag_on_post:   
 
 **If you have any problems with this app or have an idea that contributes, open a [issue](https://github.com/upALX/study-hub-backend/issues), [pull request](https://github.com/upALX/study-hub-backend/pulls) or find me on [Linkedin](https://www.linkedin.com/in/alxinc/). Don't forget to give the project a star 🌟 :D**
 
