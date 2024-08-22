@@ -4,7 +4,6 @@
 
 🎇**This project is under CAOS of knowledge and CAOS is always necessary to the progress**🎇
 
-
 ---
 
 ## Tech stack
@@ -31,5 +30,6 @@ This project is under the [MIT license](https://github.com/upALX/study-hub-backe
 
 
 ---
+
 
 **Developed with 💜 by ME**
