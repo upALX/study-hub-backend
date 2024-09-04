@@ -21,7 +21,6 @@ All of all
 git clone git@github.com:upALX/study-hub-backend.git
 ```
 
-
 **Know the CAOS of knowledge**
 
 
