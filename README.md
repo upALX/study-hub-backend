@@ -35,5 +35,4 @@ This project is under the [MIT license](https://github.com/upALX/study-hub-backe
 
 ---
 
-
 **Developed with 💜 by ME**
