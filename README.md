@@ -2,7 +2,6 @@
 
 ![giphy](https://github.com/upALX/All-Assets/blob/main/on-mvp.webp)
 
-
 🎇**This project is under CAOS of knowledge and CAOS is always necessary to the progress**🎇
 
 ---
