@@ -30,7 +30,6 @@ git clone git@github.com:upALX/study-hub-backend.git
 
 This project is under the [MIT license](https://github.com/upALX/study-hub-backend/blob/main/LICENSE).
 
-
 ---
 
 **Developed with 💜 by ME**
