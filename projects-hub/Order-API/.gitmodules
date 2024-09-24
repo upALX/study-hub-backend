@@ -1,0 +1,3 @@
+[submodule "microsservices"]
+	path = microsservices
+	url = git@github.com:devfullcycle/imersao17.git

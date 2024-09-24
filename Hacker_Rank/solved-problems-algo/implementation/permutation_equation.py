@@ -25,7 +25,6 @@ def permutationEquation(sequence):
     
     return result
 
-
 n = int(input().strip())
 
 p = list(map(int, input().rstrip().split()))

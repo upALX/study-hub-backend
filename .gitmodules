@@ -46,3 +46,6 @@
 [submodule "projects-hub/pick"]
 	path = projects-hub/pick
 	url = git@github.com:upALX/PickMe.git
+[submodule "projects-hub/stocks"]
+	path = projects-hub/stocks
+	url = git@github.com:upALX/i-need-stocks.git
