@@ -19,3 +19,12 @@ SELECT CITY, STATE from STATION;
 SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;
 --Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
 SELECT count(CITY) - count(distinct(CITY)) FROM STATION;
+--Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+
+--Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+SELECT DISTINCT CITY FROM STATION
+WHERE CITY LIKE 'A%' 
+   OR CITY LIKE 'E%' 
+   OR CITY LIKE 'I%' 
+   OR CITY LIKE 'O%' 
+   OR CITY LIKE 'U%';
