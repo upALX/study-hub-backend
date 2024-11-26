@@ -4,3 +4,5 @@ SELECT ROUND(MAX(LAT_N), 4) FROM STATION WHERE LAT_N < 137.2345;
 SELECT COUNT(*) FROM CITY WHERE POPULATION > 100000;
 --Query the total population of all cities in CITY where District is California.
 SELECT SUM(POPULATION) FROM CITY WHERE DISTRICT = 'California';
+--Query the average population of all cities in CITY where District is California.
+SELECT AVG(POPULATION) FROM CITY WHERE DISTRICT = 'California';
