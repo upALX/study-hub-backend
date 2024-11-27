@@ -29,3 +29,5 @@ SELECT ROUND(LONG_W, 4) FROM STATION WHERE LAT_N = (SELECT MIN(LAT_N) FROM STATI
 -- Write a query calculating the amount of error (i.e.:  average monthly salaries), and round it up to the next integer.
 SELECT CEIL(ABS(AVG(Salary) - AVG(CAST(REPLACE(CAST(Salary AS CHAR), '0', '') AS DECIMAL)))) 
 FROM EMPLOYEES;
+-- We define an employee's total earnings to be their monthly  worked, and the maximum total earnings to be the maximum total earnings for any employee in the Employee table. Write a query to find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings. Then print these values as  space-separated integers.
+SELECT MAX(SALARY * MONTHS), COUNT(*) FROM EMPLOYEE WHERE SALARY * MONTHS = (SELECT MAX(SALARY * MONTHS) FROM EMPLOYEE);
