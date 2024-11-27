@@ -31,3 +31,10 @@ SELECT CEIL(ABS(AVG(Salary) - AVG(CAST(REPLACE(CAST(Salary AS CHAR), '0', '') AS
 FROM EMPLOYEES;
 -- We define an employee's total earnings to be their monthly  worked, and the maximum total earnings to be the maximum total earnings for any employee in the Employee table. Write a query to find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings. Then print these values as  space-separated integers.
 SELECT MAX(SALARY * MONTHS), COUNT(*) FROM EMPLOYEE WHERE SALARY * MONTHS = (SELECT MAX(SALARY * MONTHS) FROM EMPLOYEE);
+-- Consider  and  to be two points on a 2D plane.
+--  happens to equal the minimum value in Northern Latitude (LAT_N in STATION).
+--  happens to equal the minimum value in Western Longitude (LONG_W in STATION).
+--  happens to equal the maximum value in Northern Latitude (LAT_N in STATION).
+--  happens to equal the maximum value in Western Longitude (LONG_W in STATION).
+-- Query the Manhattan Distance between points  and  and round it to a scale of  decimal places.
+SELECT ROUND(ABS(MIN(LAT_N) + MIN(LONG_W) - ABS(MAX(LAT_N) + MAX(LONG_W))), 4) FROM STATION;
