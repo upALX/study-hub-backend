@@ -18,3 +18,5 @@ SELECT MAX(POPULATION) - MIN(POPULATION)  FROM CITY;
 SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2) FROM STATION;
 --Query the sum of Northern Latitudes (LAT_N) from STATION having values greater than 38.7889 and less than 137.2345. Truncate your answer to  decimal places.
 SELECT ROUND(SUM(LAT_N), 4) FROM STATION WHERE LAT_N > 38.7880 AND LAT_N < 137.2345;  
+--Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than 137,2345. Round your answer to 4 decimal places.
+SELECT ROUND(MAX(LONG_W), 4) FROM STATION WHERE LAT_N = (SELECT MAX(LAT_N) FROM STATION WHERE LAT_N < 137.2345);
