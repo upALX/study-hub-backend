@@ -37,4 +37,10 @@ SELECT MAX(SALARY * MONTHS), COUNT(*) FROM EMPLOYEE WHERE SALARY * MONTHS = (SEL
 --  happens to equal the maximum value in Northern Latitude (LAT_N in STATION).
 --  happens to equal the maximum value in Western Longitude (LONG_W in STATION).
 -- Query the Manhattan Distance between points  and  and round it to a scale of  decimal places.
-SELECT ROUND(ABS(MIN(LAT_N) + MIN(LONG_W) - ABS(MAX(LAT_N) + MAX(LONG_W))), 4) FROM STATION;
+SELECT ROUND(ABS(ABS(MIN(LAT_N) + MIN(LONG_W)) - ABS(MAX(LAT_N) + MAX(LONG_W))), 4) FROM STATION;
+--OR
+SELECT ROUND(
+    (ABS(MAX(LAT_N) - MIN(LAT_N)) + ABS(MAX(LONG_W) - MIN(LONG_W))),
+    4
+) AS manhattan_distance
+FROM STATION;
