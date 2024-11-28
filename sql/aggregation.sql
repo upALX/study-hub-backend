@@ -51,3 +51,16 @@ SELECT ROUND(
     SQRT(POWER(MAX(LAT_N) - MIN(LAT_N), 2) + POWER(MAX(LONG_W) - MIN(LONG_W), 2)),
     4
 ) FROM STATION;
+-- A median is defined as a number separating the higher half of a data set from the lower half. Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to  decimal places.
+WITH OrderedLat AS (
+    SELECT 
+        LAT_N,
+        ROW_NUMBER() OVER (ORDER BY LAT_N) AS RowNumber,
+        COUNT(*) OVER () AS TotalRows
+    FROM STATION
+)
+SELECT 
+    ROUND(AVG(LAT_N), 4) AS Median
+FROM OrderedLat
+WHERE 
+    RowNumber IN ((TotalRows + 1) / 2, (TotalRows + 2) / 2);
