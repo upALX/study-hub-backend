@@ -8,17 +8,17 @@ import sys
 
 # Complete the jumpingOnClouds function below.
 def jumpingOnClouds(clouds, jump_size):
-    energy = 100
-    current_cloud = 0
-    while True:
-        next_cloud = (current_cloud + jump_size) % len(clouds)
-        energy -= 1  # Consume 1 unit of energy for each jump
-        if clouds[next_cloud] == 1:  # If next cloud is a thundercloud
-            energy -= 2  # Decrease energy by 2
-        if next_cloud == 0:  # If the character lands back on the starting cloud
-            break
-        current_cloud = next_cloud
-    return energy
+    n = len(c)
+    jumps = 0
+    position = 0
+
+    while position < n - 1:
+        if position + 2 < n and c[position + 2] == 0:
+            position += 2
+        else:
+            position += 1
+        jumps += 1
+    return jumps
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
