@@ -1,7 +1,9 @@
 
 
-
 #!/bin/python3
+
+import os
+from collections import Counter
 
 
 #
@@ -13,12 +15,25 @@
 #  2. INTEGER_ARRAY ar
 #
 
-
 def sockMerchant(n, ar):
     
+    color_counts = Counter(ar)  
+    pairs = 0
+    
+    for count in color_counts.values():
+        pairs += count // 2  
+    
+    return pairs
 
-n = int(input().strip())
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-ar = list(map(int, input().rstrip().split()))
+    n = int(input().strip())
 
-result = sockMerchant(n, ar)
+    ar = list(map(int, input().rstrip().split()))
+
+    result = sockMerchant(n, ar)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
