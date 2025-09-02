@@ -11,6 +11,7 @@ public class CurrentAccount{
     private LocalDate birthDate;
     private double accountBalance = 0.0;
     private List<Integer> accounts;
+    private List<Transacions> history;
 
     public CurrentAccount(int accountNumber, int agencyNumber, String clientName, LocalDate birthDate, double accountBalance) {
         this.accountBalance = accountBalance;
@@ -19,23 +20,36 @@ public class CurrentAccount{
         this.birthDate = birthDate;
         this.agencyNumber = agencyNumber;
         this.accounts = new ArrayList<>();
+        this.history = new ArrayList<>();
     }
 
-    public String getValue(double value){
-
-        String message;
+    public void getValue(double value){
 
         if (value <= accountBalance){
             this.accountBalance -= value;
-            message = String.format("Você sacou %.2f. Saldo atual: %.2f", value, this.accountBalance);
+            String.format("Você sacou %.2f. Saldo atual: %.2f", value, this.accountBalance);
         }else{
-            message = String.format("Seu saldo é insuficiente para o saque. Deposite. Melhore. Saldo atual: %.2f", this.accountBalance);
+            String.format("Seu saldo é insuficiente para o saque. Deposite. Melhore. Saldo atual: %.2f", this.accountBalance);
         }
 
-        return message;
     }
 
     private boolean validateAccount(int account){
         return this.accounts.contains(account);
+    }
+
+    public void removeAccount(int account){
+        isValidAccount = this.validateAccount(account);
+
+        if(isValidAccount){
+            this.accounts.remove(Integer.valueOf(account));
+            print.format("Conta %i removida.", this.accountNumber);
+        }else{
+            print.format("Conta %i não existe.", this.accountNumber);
+        }
+    }
+
+    public List<Transacions> getHistory() {
+        return history;
     }
 }
