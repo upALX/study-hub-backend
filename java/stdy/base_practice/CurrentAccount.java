@@ -23,6 +23,10 @@ public class CurrentAccount{
         this.history = new ArrayList<>();
     }
 
+    public void getAmount(){
+        String.format("Saldo total: %.2f", this.accountBalance);
+    }
+
     public void getValue(double value){
 
         if (value <= accountBalance){
@@ -39,17 +43,29 @@ public class CurrentAccount{
     }
 
     public void removeAccount(int account){
-        isValidAccount = this.validateAccount(account);
+        boolean isValidAccount = this.validateAccount(account);
 
         if(isValidAccount){
             this.accounts.remove(Integer.valueOf(account));
-            print.format("Conta %i removida.", this.accountNumber);
+            String.format("Conta %i removida.", this.accountNumber);
         }else{
-            print.format("Conta %i não existe.", this.accountNumber);
+            String.format("Conta %i não existe.", this.accountNumber);
         }
     }
 
     public List<Transacions> getHistory() {
         return history;
+    }
+
+    public List<Transacions> getHistory(LocalDate start, LocalDate end) {
+        List<Transacions> filtered = new ArrayList<>();
+        for (Transacions transaction : history) {
+            LocalDate date = transaction.getDate().toLocalDate();
+            if ((date.isEqual(start) || date.isAfter(start)) &&
+                    (date.isEqual(end)   || date.isBefore(end))) {
+                filtered.add(transaction);
+            }
+        }
+        return filtered;
     }
 }
