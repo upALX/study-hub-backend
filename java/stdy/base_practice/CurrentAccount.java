@@ -57,15 +57,15 @@ public class CurrentAccount{
         return history;
     }
 
-    public List<Transacions> getHistory(LocalDate start, LocalDate end) {
-        List<Transacions> filtered = new ArrayList<>();
-        for (Transacions transaction : history) {
-            LocalDate date = transaction.getDate().toLocalDate();
-            if ((date.isEqual(start) || date.isAfter(start)) &&
-                    (date.isEqual(end)   || date.isBefore(end))) {
-                filtered.add(transaction);
-            }
-        }
-        return filtered;
-    }
+//    public List<Transacions> getHistory(LocalDate start, LocalDate end) {
+//        List<Transacions> filtered = new ArrayList<>();
+//        for (Transacions transaction : history) {
+//            LocalDate date = transaction.getDate().toLocalDate();
+//            if ((date.isEqual(start) || date.isAfter(start)) &&
+//                    (date.isEqual(end)   || date.isBefore(end))) {
+//                filtered.add(transaction);
+//            }
+//        }
+//        return filtered;
+//    }
 }

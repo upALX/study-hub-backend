@@ -1,6 +1,6 @@
-package operations_math;
+package operators;
 
-public class operations {
+public class Operations {
     public static void main(String[] args) {
         Integer n = 5;
         String sum = "1" + 1 + 1 + 1;
