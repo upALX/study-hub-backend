@@ -1,5 +1,13 @@
 [
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "decoration_func",
         "kind": 2,
         "importPath": "args_decorator",
@@ -15,6 +23,33 @@
         "description": "args_decorator",
         "peekOfCode": "def function_reply(name):\n    print(f\"Say hello to my little frined: {name}!\")\n    return name\nfunction_reply(\"ALX\")",
         "detail": "args_decorator",
+        "documentation": {}
+    },
+    {
+        "label": "not_during_the_night",
+        "kind": 2,
+        "importPath": "decorator_base",
+        "description": "decorator_base",
+        "peekOfCode": "def not_during_the_night(func):\n    def wrapper():\n        if 7 <= datetime.now().hour < 22:\n            func()\n        else:\n            pass \n    return wrapper\ndef say_whee():\n    print(\"Whee!\")\nsay_whee = not_during_the_night(say_whee)",
+        "detail": "decorator_base",
+        "documentation": {}
+    },
+    {
+        "label": "say_whee",
+        "kind": 2,
+        "importPath": "decorator_base",
+        "description": "decorator_base",
+        "peekOfCode": "def say_whee():\n    print(\"Whee!\")\nsay_whee = not_during_the_night(say_whee)",
+        "detail": "decorator_base",
+        "documentation": {}
+    },
+    {
+        "label": "say_whee",
+        "kind": 5,
+        "importPath": "decorator_base",
+        "description": "decorator_base",
+        "peekOfCode": "say_whee = not_during_the_night(say_whee)",
+        "detail": "decorator_base",
         "documentation": {}
     }
 ]

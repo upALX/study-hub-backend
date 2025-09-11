@@ -11,5 +11,4 @@ def function_reply(name):
     print(f"Say hello to my little frined: {name}!")
     return name
 
-
 function_reply("ALX")
