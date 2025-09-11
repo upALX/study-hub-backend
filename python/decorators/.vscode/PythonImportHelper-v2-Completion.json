@@ -1,0 +1,20 @@
+[
+    {
+        "label": "decoration_func",
+        "kind": 2,
+        "importPath": "args_decorator",
+        "description": "args_decorator",
+        "peekOfCode": "def decoration_func(func):\n    def wrapper(*args, **kwargs):\n        print(\"Hello decorator init\")\n        func(*args, **kwargs)\n        print(\"Hello decorator end\")\n        return func(*args, **kwargs)\n    return wrapper\n@decoration_func\ndef function_reply(name):\n    print(f\"Say hello to my little frined: {name}!\")",
+        "detail": "args_decorator",
+        "documentation": {}
+    },
+    {
+        "label": "function_reply",
+        "kind": 2,
+        "importPath": "args_decorator",
+        "description": "args_decorator",
+        "peekOfCode": "def function_reply(name):\n    print(f\"Say hello to my little frined: {name}!\")\n    return name\nfunction_reply(\"ALX\")",
+        "detail": "args_decorator",
+        "documentation": {}
+    }
+]
