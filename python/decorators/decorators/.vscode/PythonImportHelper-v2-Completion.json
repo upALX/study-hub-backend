@@ -1,0 +1,123 @@
+[
+    {
+        "label": "functools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "functools",
+        "description": "functools",
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "amount_time",
+        "kind": 2,
+        "importPath": "amount_time",
+        "description": "amount_time",
+        "peekOfCode": "def amount_time(func):\n    @functools.wraps(func)\n    def wrapper_timer(*args, **kwargs):\n        start_time = time.perf_counter()\n        func_return = func(*args, **kwargs)\n        end_time = time.perf_counter()\n        print(\"The final time of execution is: \", end_time - start_time)\n        return func_return\n    return wrapper_timer\n@amount_time",
+        "detail": "amount_time",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_something",
+        "kind": 2,
+        "importPath": "amount_time",
+        "description": "amount_time",
+        "peekOfCode": "def calculate_something(time: int):\n    for t in range(time):\n        print(t)\n        t +=1\ncalculate_something(time=1000)",
+        "detail": "amount_time",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "register",
+        "description": "register",
+        "peekOfCode": "def register(func):\n    \"\"\"Registra funcoes como plugins\"\"\"\n    PLUGINS[func.__name__] = func\n    return func\napp = Flask(__name__)\ndef login_required(func):\n    \"\"\"Login required decorator to use the API\"\"\"\n    @functools.wraps(func)\n    def wrapper_login_required(*args, **kwargs):\n        if g.user is None:",
+        "detail": "register",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "kind": 2,
+        "importPath": "register",
+        "description": "register",
+        "peekOfCode": "def login_required(func):\n    \"\"\"Login required decorator to use the API\"\"\"\n    @functools.wraps(func)\n    def wrapper_login_required(*args, **kwargs):\n        if g.user is None:\n            return redirect(url_for(\"login\", next=request.url))\n        return func(*args, **kwargs)\n    return wrapper_login_required\n@app.route(\"/secret\")\n@login_required",
+        "detail": "register",
+        "documentation": {}
+    },
+    {
+        "label": "secret",
+        "kind": 2,
+        "importPath": "register",
+        "description": "register",
+        "peekOfCode": "def secret():\n    ...",
+        "detail": "register",
+        "documentation": {}
+    },
+    {
+        "label": "PLUGINS",
+        "kind": 5,
+        "importPath": "register",
+        "description": "register",
+        "peekOfCode": "PLUGINS = []\ndef register(func):\n    \"\"\"Registra funcoes como plugins\"\"\"\n    PLUGINS[func.__name__] = func\n    return func\napp = Flask(__name__)\ndef login_required(func):\n    \"\"\"Login required decorator to use the API\"\"\"\n    @functools.wraps(func)\n    def wrapper_login_required(*args, **kwargs):",
+        "detail": "register",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "register",
+        "description": "register",
+        "peekOfCode": "app = Flask(__name__)\ndef login_required(func):\n    \"\"\"Login required decorator to use the API\"\"\"\n    @functools.wraps(func)\n    def wrapper_login_required(*args, **kwargs):\n        if g.user is None:\n            return redirect(url_for(\"login\", next=request.url))\n        return func(*args, **kwargs)\n    return wrapper_login_required\n@app.route(\"/secret\")",
+        "detail": "register",
+        "documentation": {}
+    }
+]
