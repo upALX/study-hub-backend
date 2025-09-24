@@ -2,18 +2,32 @@ import java.io.*;
 import java.util.*;
 
 public class Solution {
-    public static void pushCharacter(char c){
-        
+    private static Deque<Character> deque = new LinkedList<>();
+
+    public boolean isEmpty() {
+        return deque.isEmpty();
     }
-    public static void enqueueCharacter(char c){
-        
-    } 
-    public static boolean popCharacter(){
-        return true;
-    } 
-    public static boolean dequeueCharacter(){
-        return false;
+
+    public int getSize() {
+        return deque.size();
     }
+
+    public void enqueueCharacter(char c) {
+        deque.addLast(c); 
+    }
+
+    public char dequeueCharacter() {
+        return deque.pollFirst();
+    }
+
+    public void pushCharacter(char c) {
+        deque.addLast(c); 
+    }
+
+    public char popCharacter() {
+        return deque.pollLast();
+    }
+
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
